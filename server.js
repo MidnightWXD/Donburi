@@ -5,7 +5,7 @@ const db = require('./db/db.json');
 const fs = require('fs');
 const uuid = require('./randomUUID/uuid.js');
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.json());

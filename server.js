@@ -55,8 +55,12 @@ app.delete('/api/notes/:id', (req, res) => {
     // db.forEach((note, index) => {
     //     if(note.id === id) {
     //         db.splice(index, 1);
+    //         console.log(index);
     //     }
     // });
+    // fs.writeFile('./db/db.json', JSON.stringify(db, null, 2), (err) =>
+    //     err ? console.log(err) : console.log('Data deleted successfully'));
+    // res.status(200).json({ message: 'Note deleted' });
 });
 
 
